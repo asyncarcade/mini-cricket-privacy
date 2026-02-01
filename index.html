@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini Cricket - Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+      color: #222;
+    }
+    h1, h2 {
+      color: #111;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .muted {
+      color: #666;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Privacy Policy for Mini Cricket</h1>
+<p class="muted"><strong>Effective Date:</strong> February 1, 2026</p>
+
+<p>
+Async Arcade ("we", "our", or "us") operates the Mini Cricket game across Android,
+web platforms, and future iOS releases.
+</p>
+
+<!-- =========================
+     CONFIG — EDIT THESE
+========================= -->
+<script>
+  const POLICY_CONFIG = {
+    showAds: false,            // Turn ON when AdMob / Unity Ads are live
+    showAnalytics: false,      // Turn ON if you add analytics (Firebase, etc.)
+    showLeaderboards: false,   // Turn ON when Google Play leaderboards go live
+    showCloudSave: false,     // Turn ON when cloud save is added
+    collectNameAndAge: true   // Currently TRUE (name + age for profile)
+  };
+</script>
+
+<div class="section">
+  <h2>1. Information We Collect</h2>
+
+  <div id="personalInfoSection" style="display:none;">
+    <h3>Personal Information</h3>
+    <ul>
+      <li>Player name (for in-game profile display)</li>
+      <li>Player age (for age-appropriate experience and configuration)</li>
+    </ul>
+  </div>
+
+  <div id="autoInfoSection">
+    <h3>Automatically Collected Information</h3>
+    <ul>
+      <li>Device information (device model, operating system)</li>
+      <li>Basic gameplay and usage data</li>
+      <li>Crash and performance information</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section" id="adsSection" style="display:none;">
+  <h2>2. Advertising</h2>
+  <p>
+    Mini Cricket may display third-party advertisements. Advertising partners may
+    collect information such as advertising IDs, device identifiers, and usage data
+    to provide relevant or non-personalized ads.
+  </p>
+  <ul>
+    <li>Google AdMob</li>
+    <li>Unity Ads</li>
+  </ul>
+</div>
+
+<div class="section" id="analyticsSection" style="display:none;">
+  <h2>3. Analytics</h2>
+  <p>
+    We may use third-party analytics services to understand how players use the game
+    and to improve performance and user experience.
+  </p>
+</div>
+
+<div class="section" id="onlineFeaturesSection" style="display:none;">
+  <h2>4. Online Features</h2>
+  <p>
+    Mini Cricket may include online features such as:
+  </p>
+  <ul>
+    <li id="leaderboardsItem" style="display:none;">Online leaderboards</li>
+    <li id="cloudSaveItem" style="display:none;">Cloud save and synchronization</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>5. Children’s Privacy</h2>
+  <p>
+    Mini Cricket is intended for a general audience. We do not knowingly collect
+    personal information from children under the age of 13 without parental consent.
+    If you believe that a child has provided personal information, please contact us
+    and we will take appropriate action.
+  </p>
+</div>
+
+<div class="section">
+  <h2>6. Data Security</h2>
+  <p>
+    We value your trust in providing us your information and strive to use commercially
+    acceptable means to protect it. However, no method of transmission or storage is
+    100% secure.
+  </p>
+</div>
+
+<div class="section">
+  <h2>7. Changes to This Privacy Policy</h2>
+  <p>
+    We may update this Privacy Policy from time to time. Changes are effective
+    immediately after they are posted on this page.
+  </p>
+</div>
+
+<div class="section">
+  <h2>8. Contact Us</h2>
+  <p>
+    If you have any questions about this Privacy Policy, contact us at:
+  </p>
+  <p>
+    <strong>Email:</strong> asyncarcade@gmail.com<br />
+    <strong>Developer:</strong> Async Arcade
+  </p>
+</div>
+
+<script>
+  // Apply config toggles
+  if (POLICY_CONFIG.collectNameAndAge) {
+    document.getElementById("personalInfoSection").style.display = "block";
+  }
+
+  if (POLICY_CONFIG.showAds) {
+    document.getElementById("adsSection").style.display = "block";
+  }
+
+  if (POLICY_CONFIG.showAnalytics) {
+    document.getElementById("analyticsSection").style.display = "block";
+  }
+
+  if (
+    POLICY_CONFIG.showLeaderboards ||
+    POLICY_CONFIG.showCloudSave
+  ) {
+    document.getElementById("onlineFeaturesSection").style.display = "block";
+  }
+
+  if (POLICY_CONFIG.showLeaderboards) {
+    document.getElementById("leaderboardsItem").style.display = "list-item";
+  }
+
+  if (POLICY_CONFIG.showCloudSave) {
+    document.getElementById("cloudSaveItem").style.display = "list-item";
+  }
+</script>
+
+</body>
+</html>
+
